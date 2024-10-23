@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f2f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 10px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-top: 20px;
+}
+
+.back-link {
+  color: #ff6584;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.form button{
+  margin-top: 10px;
+  width: 200px;
+}
+
+.item-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #CA3884;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  background-color: #A52C6B;
+}
+
+.list-items {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #C93847;
+}
+
+.delete-button img {
+  width: 36px;
+  height: 36px;
+  color: #C93847;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #C93847;
+  color: #fff;
+  border-radius: 5px;
+  gap: 10px;
+  display: none;
+}
+
+.notification img {
+  width: 20px;
+  height: 20px; 
+  vertical-align: middle; 
+}
+
+.notification span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.show-notification {
+  display: block;
+}
+
+@media (max-width: 840px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form button{
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  .item-input {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-button {
+    font-size: 16px;
+    background-color: #CA3884;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+}

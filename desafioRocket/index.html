@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="./assets/logo.png" alt="logo">
+            <h1>quicklist</h1>
+        </div>
+
+        <header>
+            <a href="#" class="back-link">← Voltar</a>
+            <h1>Compras da semana</h1>
+        </header>
+
+        <div class="shopping-list">
+
+            <form class="form">
+              <input type="text" class="item-input" placeholder="Adicione um novo item">
+              <button class="add-button">Adicionar item</button>
+            </form>
+
+            <ul class="list-items">
+                <li class="list-item">
+                    <span>Pão de forma</span>
+                    <button class="delete-button">
+                        <img src="./assets/button.png" alt="Delete">
+                    </button>
+                </li>
+                <li class="list-item">
+                    <span>Café preto</span>
+                    <button class="delete-button">
+                        <img src="./assets/button.png" alt="Delete">
+                    </button>
+                </li>
+                <li class="list-item">
+                    <span>Suco de laranja</span>
+                    <button class="delete-button">
+                        <img src="./assets/button.png" alt="Delete">
+                    </button>
+                </li>
+                <li class="list-item">
+                    <span>Bolacha</span>
+                    <button class="delete-button">
+                        <img src="./assets/button.png" alt="Delete">
+                    </button>
+                </li>
+            </ul>
+
+            <div class="notification">
+                <img src="./assets/Icon.png" alt="exclamação">
+                <span>O item foi removido da lista</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
